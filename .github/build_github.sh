@@ -41,7 +41,9 @@ mv ./tmp/SideStoreSupport.framework Payload/LiveContainer.app/Frameworks
 
 # download SideStore
 cd tmp
-wget https://github.com/LiveContainer/SideStore/releases/download/nightly/SideStore.ipa
+# 공식 SideStore nightly 사용 (LiveContainer/SideStore 포크는 공식 develop과 코드가 같고 CI만 다른데, 9/18 이후 갱신이 멈춰 있음)
+# 원래 값: https://github.com/LiveContainer/SideStore/releases/download/nightly/SideStore.ipa
+wget https://github.com/SideStore/SideStore/releases/download/nightly/SideStore.ipa
 unzip SideStore.ipa
 cd ..
 
